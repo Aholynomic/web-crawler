@@ -131,10 +131,8 @@ class WebCrawler():
                         if url not in self.tasks:
                             # if not visited
                             if url not in self.visited:
-                                # check against robots.txt
-                                if (True):
-                                    print("**************: {}".format(url))
-                                    self.tasks.append(url)
+                                print("**************: {}".format(url))
+                                self.tasks.append(url)     
             except:
                 pass
     

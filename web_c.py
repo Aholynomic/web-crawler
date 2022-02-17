@@ -13,7 +13,6 @@ check python version
 save results to excel file
 modify web headers - uAgent
 add exceptions for just domain names
-
 """
 
 userAgent = "*"
@@ -50,9 +49,7 @@ class WebCrawler():
         Returns: 
             None
         """
-    
-        self.inspect_robot(self.start_url)
-
+        
         while(len(self.tasks) > 0 and len(self.visited) < self.max):
             # grab the url from the queue
             next_url = self.tasks.pop(0)
@@ -135,24 +132,6 @@ class WebCrawler():
                                 self.tasks.append(url)     
             except:
                 pass
-    
-    def inspect_robot(self, url):
-        """Check for robots.txt
-        
-        Args:
-            url: the url link that will be inspected for robots.txt
-                    
-        Returns:
-            None
-        
-        """
-        
-        print("Inspecting robots.txt...")
-        r = requests.get("{}{}".format(url,"/robots.txt"))
-        if r:
-            print("found")
-        else:
-            print("not found")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='A basic web crawler.')

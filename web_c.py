@@ -19,7 +19,7 @@ userAgent = "*"
 
 class WebCrawler():
     
-    def __init__(self, url, max_crawl) -> None: 
+    def __init__(self, url, max_crawl=1) -> None: 
         """Constructor for Web Crawler
 
         Args:

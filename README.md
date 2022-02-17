@@ -5,3 +5,6 @@
 * Beautiful Soup (bs4)
 * Argparse
 * Urllib
+
+Example format:
+	web_c.py -H <website to be crawled>

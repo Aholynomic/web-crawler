@@ -7,4 +7,4 @@
 * Urllib
 
 Example format:
-	web_c.py -H host_to_be_crawled (https:(host)/
+	web_c.py -H host_to_be_crawled (https:(host)/)

@@ -1,4 +1,4 @@
-# Web_Crawler
+# web-crawler
  A basic web crawler created in Python 3
  using the following libraries:
 * Requests
